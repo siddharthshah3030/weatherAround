@@ -91,37 +91,45 @@ body
 	padding 0
 	overflow hidden
 	> li
-		border-top 3px solid #fc0203
+		border-top 3px solid white
 		float left
 		width 110px
 		height 150px
+		transition 0.3s
 		&:first-child
 			border-bottom-left-radius 5px
 		&:last-child
 			border-bottom-right-radius 5px
-		&.sun
-			border-color #FFF000
-			background fade-out(#FFF000, 95%)
-		&.cloud
-			border-color #d3d3d3
-			background fade-out(#d3d3d3, 95%)
-		&.rain
-			border-color #00ccff
-			background fade-out(#00ccff, 95%)
-		&.rain.sun
-			border-color #8de8ff
-			background fade-out(#8de8ff, 95%)
-		&.cloud.sun
-			border-color #fffcb1
-			background fade-out(#fffcb1, 95%)
+		&.active
+			&.sun
+				border-color #FFF000
+				background fade-out(#FFF000, 95%)
+			&.cloud
+				border-color #d3d3d3
+				background fade-out(#d3d3d3, 95%)
+			&.rain
+				border-color #00ccff
+				background fade-out(#00ccff, 95%)
+			&.rain.sun
+				border-color #8de8ff
+				background fade-out(#8de8ff, 95%)
+			&.cloud.sun
+				border-color #fffcb1
+				background fade-out(#fffcb1, 95%)
+			&.lightning
+				border-color #fff
+				background fade-out(#fff, 95%)
 		> .inner
 			border-right 1px solid fade-out(black, 90%)
 			width 100%
 			height 100%
 			padding 20px
 			text-align center
+			opacity 0
+			transform translate(0, 20px)
+			transition 0.5s
+	
 			.climacon
-				text-shadow 0 3px 1px fade-out(#000, 90%)
 				font-size 40px
 				width 50px
 				height 50px
@@ -130,6 +138,9 @@ body
 				border-radius 50%
 				background fade-out(black, 90%)
 				margin-bottom 5px
+				opacity 0
+				transition 1s
+				transform scale(0.8)
 				&.rain.sun
 					padding-top 2px
 					padding-left 3px
@@ -138,6 +149,14 @@ body
 					padding-left 2px
 		&:last-child > .inner
 			border-right none
+		&.active
+			> .inner
+				opacity 1
+				transform translate(0, 0)
+				.climacon
+					opacity 1
+					text-shadow 0 3px 1px fade-out(#000, 90%)
+					transform scale(1)
 
 // temp
 .weather-icon-sm
@@ -201,6 +220,9 @@ body
 	line-height 200px
 	position relative
 	font-weight 100
+	transition 0.3s
+	opacity 0
+	transform translate(-15px, 0)
 	&:after
 		content ''
 		top 45px
@@ -224,6 +246,9 @@ body
 		padding-right 20px
 	&.minus:before
 		content '-'
+	&.active
+		opacity 1
+		transform translate(0, 0)
 
 .temperature-feels
 	position absolute
@@ -261,6 +286,9 @@ body
 	transform translate(0, -50%)
 	> li
 		overflow hidden
+		opacity 0
+		transform translate(0, -10px)
+		transition 0.4s
 		.climacon
 			display block
 			font-size 50px
@@ -274,6 +302,9 @@ body
 			position relative
 			top 10px
 			font-weight 300
+		&.active
+			opacity 1
+			transform translate(0, 0)
 
 .location,
 .today

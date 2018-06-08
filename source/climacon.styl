@@ -1,0 +1,42 @@
+_sec_color = #aedef4
+
+.climacon_component-stroke
+	fill white
+	stroke-width 0px
+	stroke white
+.climacon_component-fill
+	fill _sec_color
+	stroke-width 0px
+	stroke white
+
+svg
+	float left
+	shape-rendering geometricPrecision
+
+g, path, circle, rect
+	transform-origin 50% 50%
+	animation-timing-function linear
+	animation-direction normal
+	animation-iteration-count infinite
+	animation-duration 12s
+
+.climacon_componentWrap-sun
+	animation-name rotate
+
+
+.climacon_iconWrap-sun .climacon_component-stroke_sunSpoke,
+.climacon_iconWrap-sunFill .climacon_component-stroke_sunSpoke
+	fill-opacity 1
+	animation-name scale
+	animation-direction alternate
+	animation-duration 3s
+
+.climacon_iconWrap .climacon_component-stroke_sunSpoke:nth-child(even)
+	animation-delay 3s
+
+// Animations
+@keyframes rotate
+	0%
+		transform rotate(0)
+	100%
+		transform rotate(360deg)

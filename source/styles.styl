@@ -1,0 +1,305 @@
+@import 'nib'
+
+*
+	box-sizing border-box
+
+html,
+body,
+.main-wrapper,
+.main-wrapper-front
+	width 100%
+	height 100%
+
+
+body
+	color white
+	font-family 'Roboto', sans-serif
+
+.main-wrapper
+	position relative
+	overflow hidden
+	> .main-wrapper-mask,
+	> .main-wrapper-blur
+		position absolute
+		top 0
+		left 0
+	> .main-wrapper-mask
+		width 100%
+		height 100%
+		z-index 5
+		opacity 0.3
+		background #000
+	> .main-wrapper-blur
+		background-size cover
+		background-position center center
+		width 50% !important
+		height 50% !important
+		transform-origin 12% 5%
+		transform scale(2.5)
+		background-size cover
+		-webkit-filter blur(10px)
+		-moz-filter blur(10px)
+		-o-filter blur(10px)
+		filter blur(10px)
+		z-index 0
+		&:before
+			content ''
+			backface-visibility hidden
+	> .main-wrapper-front
+		position relative
+		z-index 6
+
+
+.full-center
+	left 50%
+	position absolute !important
+	top 50%
+	transform translate(-50%, -50%)
+
+.widget-block
+	width 770px
+	border-radius 5px
+	background fade-out(white, 80%)
+
+.img-area
+	border-radius 5px 5px 0 0
+	position relative
+	img
+		width 100%
+		border-radius 5px 5px 0 0
+		display block
+		z-index 1
+	.img-area-mask
+		position absolute
+		width 100%
+		height 100%
+		background #000
+		border-radius 5px 5px 0 0
+		z-index 2
+		opacity 0.5
+	.img-area-front
+		z-index 3
+		position absolute
+		width 100%
+		height 100%
+		top 0
+		left 0
+
+.week-forecast
+	list-style none
+	margin 0
+	padding 0
+	overflow hidden
+	> li
+		border-top 3px solid #fc0203
+		float left
+		width 110px
+		height 150px
+		&:first-child
+			border-bottom-left-radius 5px
+		&:last-child
+			border-bottom-right-radius 5px
+		&.sun
+			border-color #FFF000
+			background fade-out(#FFF000, 95%)
+		&.cloud
+			border-color #d3d3d3
+			background fade-out(#d3d3d3, 95%)
+		&.rain
+			border-color #00ccff
+			background fade-out(#00ccff, 95%)
+		&.rain.sun
+			border-color #8de8ff
+			background fade-out(#8de8ff, 95%)
+		&.cloud.sun
+			border-color #fffcb1
+			background fade-out(#fffcb1, 95%)
+		> .inner
+			border-right 1px solid fade-out(black, 90%)
+			width 100%
+			height 100%
+			padding 20px
+			text-align center
+			.climacon
+				text-shadow 0 3px 1px fade-out(#000, 90%)
+				font-size 40px
+				width 50px
+				height 50px
+				line-height 50px
+				text-align center
+				border-radius 50%
+				background fade-out(black, 90%)
+				margin-bottom 5px
+				&.rain.sun
+					padding-top 2px
+					padding-left 3px
+				&.cloud.sun
+					padding-top 4px
+					padding-left 2px
+		&:last-child > .inner
+			border-right none
+
+// temp
+.weather-icon-sm
+	width 30px
+	height 30px
+	background white
+	display inline-block
+	border-radius 50%
+
+.weather-icon-lg
+	width 150px
+	height 150px
+	background white
+	display block
+	border-radius 50%
+	display inline-block
+	// margin-top 20px
+	position absolute
+	top 50%
+	margin-top -75px
+	left 50%
+	margin-left -75px
+
+.week-day
+	margin-top 0
+	margin-bottom 8px
+	font-weight 300
+	font-size 15px
+	text-transform lowercase
+
+.week-day-temperature
+	margin 0
+	position relative
+	// opacity .85
+	&:after
+		content ''
+		width 3px
+		height 3px
+		border-radius 50%
+		border 1px solid white
+		position absolute
+		top 1px
+		right 18px
+		display block
+		opacity .85
+	&:before
+		content '+'
+		position absolute
+		left 16px
+		top 1px
+		font-size 15px
+		opacity .85
+	&.minus:before
+		content '-'
+
+.temperature
+	text-align right
+	margin 0
+	font-size 130px
+	height 100%
+	line-height 200px
+	position relative
+	font-weight 100
+	&:after
+		content ''
+		top 45px
+		right -15px
+		height 10px
+		width 10px
+		border-radius 50%
+		border 2px solid white
+		line-height 1
+		position absolute
+		opacity .85
+	&:before
+		content '+'
+		// position absolute
+		left 20px
+		font-size 60px
+		// font-weight 300
+		// opacity .7
+		position relative
+		top -24px
+		padding-right 20px
+	&.minus:before
+		content '-'
+
+.temperature-feels
+	position absolute
+	font-size 17px
+	bottom 20px
+	right 12px
+	font-weight 300
+	line-height 1em
+	color fade-out(white, 15%)
+
+.weather-block-info
+	list-style none
+	margin 0
+	padding 0
+	overflow hidden
+	display table
+	margin -100px auto 0 auto
+	position relative
+	top 50%
+	> li
+		float left
+		width 200px
+		height 200px
+		margin 0 5px
+		position relative
+
+.weather-params
+	opacity 0.75
+	list-style none
+	margin 0
+	padding 0
+	left 0
+	position absolute
+	top 50%
+	transform translate(0, -50%)
+	> li
+		overflow hidden
+		.climacon
+			display block
+			font-size 50px
+			float left
+			margin-right 10px
+			line-height 37px
+			height 37px
+			width 37px
+			text-align center
+		span
+			position relative
+			top 10px
+			font-weight 300
+
+.location,
+.today
+	position absolute
+	font-weight 300
+	font-size 25px
+	text-align center
+	width 100%
+	margin 0
+	top 15px
+	left 0
+
+.today
+	font-size 14px
+	top 50px
+	color fade-out(white, 15%)
+
+.weather-desc
+	position absolute
+	text-align center
+	bottom 35px
+	width 100%
+	> span
+		display inline-block
+		padding 5px 10px
+		background fade-out(black, 70%)
+		border-radius 5px
+		font-size 14px
+		font-weight 300

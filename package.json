@@ -4,13 +4,16 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Your Name <siddharthshah3030@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.5.8",
     "express": "^4.16.3",
+    "nodemon": "^1.17.5",
     "request": "^2.85.0"
-  }
+  },
+  "repository": "https://github.com/siddharthshah3030/currentweather.git"
 }

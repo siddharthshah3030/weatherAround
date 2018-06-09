@@ -18,19 +18,25 @@ app.get("/results", function(req, res){
 
   console.log(url);
   request(url, function(error, response, body){
-        if(!error && response.statusCode == 200) {
+    if(error){
+      console.log(error);
+      return ;
+    } else
+    // (!error && response.statusCode == 200)
+    {
             var ob = JSON.parse(body);
+            console.log(typeof(ob));
             var weather = JSON.stringify(ob);
-            console.log("dsfngciunknecjh,nuzhcrh");
-            res.render("nr", {data: weather});
             console.log(weather);
+            res.render("nr", {data: ob});
+            console.log(ob.name);
         }
     });
 });
 
 
 
-app.listen(3000, () => {
+app.listen(8000, () => {
   console.log("SiD server started");
 });
 //

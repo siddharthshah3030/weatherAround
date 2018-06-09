@@ -21,14 +21,14 @@
                      <div class="img-area-mask"></div>
                      <img src="/paris-sm.jpg" alt="">
                      <div class="img-area-front">
-                        <h5 class="location">Paris</h5>
-                        <p class="today">Sunday, July 27, 18:00</p>
+                        <h5 class="location"><%= data.name %> </h5>
+                        <p class="today"><%var d = new Date();%><%=d%></p>
                         <div class="weather-desc">
-                           <span>Cloudy, rain</span>
+                           <span><%= data.weather[0].description%></span>
                         </div>
                         <ul class="weather-block-info">
                            <li>
-                              <p class="temperature">25<span class="temperature-feels">+20 feels</span></p>
+                              <p class="temperature"><%= Math.floor(data.main.temp -273.15) %><span class="temperature-feels">+20 feels</span></p>
                            </li>
                            <li>
                            	<!-- MAIN ANIMATED SVG WEATHER ICON -->
@@ -36,9 +36,10 @@
                            </li>
                            <li>
                               <ul class="weather-params">
-                                 <li><i class="climacon thermometer medium-high"></i> <span>743 mm Hg</span></li>
-                                 <li><i class="climacon moon full"></i> <span>46% humidity</span></li>
-                                 <li><i class="climacon wind"></i> <span>2m/s NW</span></li>
+                                 <li><i class="climacon thermometer medium-high"></i> <span><%= data.main.pressure %> hPa</span></li>
+                                 <li><i class="climacon moon full"></i> <span><%= data.main.humidity %>% humidity</span></li>
+                                 <li><i class="climacon wind"></i> <span><%= data.wind.speed %>m/s NW</span></li>
+
                               </ul>
                            </li>
                         </ul>

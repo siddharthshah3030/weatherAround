@@ -29,7 +29,9 @@ app.get("/results", function(req, res){
 
 
 
-app.listen(3000);
+app.listen(3000, () => {
+  console.log("SiD server started");
+});
 //
 // app.listen(process.env.PORT, process.env.IP, function(){
 //     console.log("weather webapp has started!!!");

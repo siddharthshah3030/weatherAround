@@ -1,0 +1,824 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body,
+.main-wrapper,
+.main-wrapper-front {
+  width: 100%;
+  height: 100%;
+}
+body {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+.main-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.main-wrapper > .main-wrapper-mask,
+.main-wrapper > .main-wrapper-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-wrapper > .main-wrapper-mask {
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  background: #000;
+}
+.main-wrapper > .main-wrapper-blur {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  width: 50% !important;
+  height: 50% !important;
+  -webkit-transform-origin: 12% 5%;
+  -moz-transform-origin: 12% 5%;
+  -o-transform-origin: 12% 5%;
+  -ms-transform-origin: 12% 5%;
+  transform-origin: 12% 5%;
+  -webkit-transform: scale(2.5);
+  -moz-transform: scale(2.5);
+  -o-transform: scale(2.5);
+  -ms-transform: scale(2.5);
+  transform: scale(2.5);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  filter: blur(10px);
+  z-index: 0;
+}
+.main-wrapper > .main-wrapper-blur:before {
+  content: '';
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.main-wrapper > .main-wrapper-front {
+  position: relative;
+  z-index: 6;
+}
+.full-center {
+  left: 50%;
+  position: absolute !important;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.widget-block {
+  width: 770px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(255,255,255,0.2);
+}
+.img-area {
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+}
+.img-area img {
+  width: 100%;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  display: block;
+  z-index: 1;
+}
+.img-area .img-area-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  z-index: 2;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+.img-area .img-area-front {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.week-forecast {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.week-forecast > li {
+  border-top: 3px solid #fc0203;
+  float: left;
+  width: 110px;
+  height: 150px;
+}
+.week-forecast > li:first-child {
+  border-bottom-left-radius: 5px;
+}
+.week-forecast > li:last-child {
+  border-bottom-right-radius: 5px;
+}
+.week-forecast > li.sun {
+  border-color: #fff000;
+  background: rgba(255,240,0,0.05);
+}
+.week-forecast > li.cloud {
+  border-color: #d3d3d3;
+  background: rgba(211,211,211,0.05);
+}
+.week-forecast > li.rain {
+  border-color: #0cf;
+  background: rgba(0,204,255,0.05);
+}
+.week-forecast > li.rain.sun {
+  border-color: #8de8ff;
+  background: rgba(141,232,255,0.05);
+}
+.week-forecast > li.cloud.sun {
+  border-color: #fffcb1;
+  background: rgba(255,252,177,0.05);
+}
+.week-forecast > li > .inner {
+  border-right: 1px solid rgba(0,0,0,0.1);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.week-forecast > li > .inner .climacon {
+  text-shadow: 0 3px 1px rgba(0,0,0,0.1);
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.1);
+  margin-bottom: 5px;
+}
+.week-forecast > li > .inner .climacon.rain.sun {
+  padding-top: 2px;
+  padding-left: 3px;
+}
+.week-forecast > li > .inner .climacon.cloud.sun {
+  padding-top: 4px;
+  padding-left: 2px;
+}
+.week-forecast > li:last-child > .inner {
+  border-right: none;
+}
+.weather-icon-sm {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.weather-icon-lg {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  display: block;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-top: -75px;
+  left: 50%;
+  margin-left: -75px;
+}
+.week-day {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: lowercase;
+}
+.week-day-temperature {
+  margin: 0;
+  position: relative;
+}
+.week-day-temperature:after {
+  content: '';
+  width: 3px;
+  height: 3px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 1px;
+  right: 18px;
+  display: block;
+  opacity: 0.85;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+  filter: alpha(opacity=85);
+}
+.week-day-temperature:before {
+  content: '+';
+  position: absolute;
+  left: 16px;
+  top: 1px;
+  font-size: 15px;
+  opacity: 0.85;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+  filter: alpha(opacity=85);
+}
+.week-day-temperature.minus:before {
+  content: '-';
+}
+.temperature {
+  text-align: right;
+  margin: 0;
+  font-size: 130px;
+  height: 100%;
+  line-height: 200px;
+  position: relative;
+  font-weight: 100;
+}
+.temperature:after {
+  content: '';
+  top: 45px;
+  right: -15px;
+  height: 10px;
+  width: 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  line-height: 1;
+  position: absolute;
+  opacity: 0.85;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+  filter: alpha(opacity=85);
+}
+.temperature:before {
+  content: '+';
+  left: 20px;
+  font-size: 60px;
+  position: relative;
+  top: -24px;
+  padding-right: 20px;
+}
+.temperature.minus:before {
+  content: '-';
+}
+.temperature-feels {
+  position: absolute;
+  font-size: 17px;
+  bottom: 20px;
+  right: 12px;
+  font-weight: 300;
+  line-height: 1em;
+  color: rgba(255,255,255,0.85);
+}
+.weather-block-info {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: table;
+  margin: -100px auto 0 auto;
+  position: relative;
+  top: 50%;
+}
+.weather-block-info > li {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 0 5px;
+  position: relative;
+}
+.weather-params {
+  opacity: 0.75;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  filter: alpha(opacity=75);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.weather-params > li {
+  overflow: hidden;
+}
+.weather-params > li .climacon {
+  display: block;
+  font-size: 50px;
+  float: left;
+  margin-right: 10px;
+  line-height: 37px;
+  height: 37px;
+  width: 37px;
+  text-align: center;
+}
+.weather-params > li span {
+  position: relative;
+  top: 10px;
+  font-weight: 300;
+}
+.location,
+.today {
+  position: absolute;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  top: 15px;
+  left: 0;
+}
+.today {
+  font-size: 14px;
+  top: 50px;
+  color: rgba(255,255,255,0.85);
+}
+.weather-desc {
+  position: absolute;
+  text-align: center;
+  bottom: 35px;
+  width: 100%;
+}
+.weather-desc > span {
+  display: inline-block;
+  padding: 5px 10px;
+  background: rgba(0,0,0,0.3);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 300;
+}

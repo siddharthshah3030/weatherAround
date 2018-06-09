@@ -8,6 +8,7 @@ app.use(express.static(__dirname + '/public'));
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res){
+   console.log("index page");
    res.render("index");
 });
 
@@ -21,7 +22,7 @@ app.get("/results", function(req, res){
             var ob = JSON.parse(body);
             var weather = JSON.stringify(ob);
             console.log("dsfngciunknecjh,nuzhcrh");
-            res.render("results", {data: weather});
+            res.render("nr", {data: weather});
             console.log(weather);
         }
     });

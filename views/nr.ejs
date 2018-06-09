@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Weather by SiD</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="/css/nr.css">
+      <link rel="stylesheet" href="normalize.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+   <body>
+      <div class="main-wrapper">
+         <div class="main-wrapper-mask"></div>
+         <div class="main-wrapper-blur" style="background-image: url(img/paris-lg.jpg)"></div>
+         <div class="main-wrapper-front">
+            <div class="full-center">
+               <div class="widget-block">
+               	<!-- MAIN AREA -->
+                  <div class="img-area">
+                     <div class="img-area-mask"></div>
+                     <img src="img/paris-sm.jpg" alt="">
+                     <div class="img-area-front">
+                        <h5 class="location">Paris</h5>
+                        <p class="today">Sunday, July 27, 18:00</p>
+                        <div class="weather-desc">
+                           <span>Cloudy, rain</span>
+                        </div>
+                        <ul class="weather-block-info">
+                           <li>
+                              <p class="temperature">25<span class="temperature-feels">+20 feels</span></p>
+                           </li>
+                           <li>
+                           	<!-- MAIN ANIMATED SVG WEATHER ICON -->
+                              <!-- /MAIN ANIMATED SVG WEATHER ICON -->
+                           </li>
+                           <li>
+                              <ul class="weather-params">
+                                 <li><i class="climacon thermometer medium-high"></i> <span>743 mm Hg</span></li>
+                                 <li><i class="climacon moon full"></i> <span>46% humidity</span></li>
+                                 <li><i class="climacon wind"></i> <span>2m/s NW</span></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- /MAIN AREA -->
+                  <!-- WEATHER FORECAST -->
+                  <ul class="week-forecast">
+                     <li class="sun">
+                        <div class="inner">
+                           <h5 class="week-day">Monday</h5>
+                           <i class="climacon sun"></i>
+                           <p class="week-day-temperature">30</p>
+                        </div>
+                     </li>
+                     <li class="rain">
+                        <div class="inner">
+                           <h5 class="week-day">Tuesday</h5>
+                           <i class="climacon rain"></i>
+                           <p class="week-day-temperature">25</p>
+                        </div>
+                     </li>
+                     <li class="cloud">
+                        <div class="inner">
+                           <h5 class="week-day">Wednsday</h5>
+                           <i class="climacon cloud"></i>
+                           <p class="week-day-temperature">32</p>
+                        </div>
+                     </li>
+                     <li class="sun">
+                        <div class="inner">
+                           <h5 class="week-day">Thursday</h5>
+                           <i class="climacon sun"></i>
+                           <p class="week-day-temperature">30</p>
+                        </div>
+                     </li>
+                     <li class="rain sun">
+                        <div class="inner">
+                           <h5 class="week-day">Friday</h5>
+                           <i class="climacon rain sun"></i>
+                           <p class="week-day-temperature">29</p>
+                        </div>
+                     </li>
+                     <li class="sun">
+                        <div class="inner">
+                           <h5 class="week-day">Saturday</h5>
+                           <i class="climacon sun"></i>
+                           <p class="week-day-temperature">25</p>
+                        </div>
+                     </li>
+                     <li class="cloud sun">
+                        <div class="inner">
+                           <h5 class="week-day">Sunday</h5>
+                           <i class="climacon cloud sun"></i>
+                           <p class="week-day-temperature">22</p>
+                        </div>
+                     </li>
+                  </ul>
+                  <!-- /WEATHER FORECAST -->
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

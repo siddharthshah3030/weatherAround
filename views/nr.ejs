@@ -14,6 +14,14 @@
          <div class="main-wrapper-mask"></div>
          <div class="main-wrapper-blur" style="background-image: url(/paris-lg.jpg)"></div>
          <div class="main-wrapper-front">
+           <div class="wrap">
+             <div class="search">
+               <input type="text" class="searchTerm" placeholder="What are you looking for?">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+               </button>
+             </div>
+           </div>
             <div class="full-center">
                <div class="widget-block">
                	<!-- MAIN AREA -->
@@ -48,14 +56,17 @@
                   <!-- /MAIN AREA -->
                   <!-- WEATHER FORECAST -->
                   <ul class="week-forecast">
+                  <%  for(var i=0;i<14;i=i+2){  %>
                      <li class="sun">
                         <div class="inner">
-                           <h5 class="week-day">Monday</h5>
+                           <h5 class="week-day">Next six hours</h5>
                            <i class="climacon sun"></i>
-                           <p class="week-day-temperature">30</p>
+                           <p class="" ><%= fdata.list[i].weather[0].description%> </p>
+                           <p class="week-day-temperature"><%=Math.floor(fdata.list[i].main.temp -273.15)%></p>
                         </div>
                      </li>
-                     <li class="rain">
+                  <% }  %>
+                     <!-- <li class="rain">
                         <div class="inner">
                            <h5 class="week-day">Tuesday</h5>
                            <i class="climacon rain"></i>
@@ -87,7 +98,7 @@
                         <div class="inner">
                            <h5 class="week-day">Saturday</h5>
                            <i class="climacon sun"></i>
-                           <p class="week-day-temperature">25</p>
+                          <p class="week-day-temperature">25</p>
                         </div>
                      </li>
                      <li class="cloud sun">
@@ -96,7 +107,7 @@
                            <i class="climacon cloud sun"></i>
                            <p class="week-day-temperature">22</p>
                         </div>
-                     </li>
+                     </li> -->
                   </ul>
                   <!-- /WEATHER FORECAST -->
                </div>

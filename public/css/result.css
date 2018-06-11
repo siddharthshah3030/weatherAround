@@ -495,7 +495,8 @@ body {
   background-position: center center;
   width: 50% !important;
   height: 50% !important;
-  -webkit-transform-origin: 12% 5%;
+  -webkit-tran 95% humidity
+sform-origin: 12% 5%;
   -moz-transform-origin: 12% 5%;
   -o-transform-origin: 12% 5%;
   -ms-transform-origin: 12% 5%;
@@ -782,23 +783,33 @@ body {
 }
 .weather-params > li {
   overflow: hidden;
+  margin-top: 10px;
 }
 .weather-params > li .climaconrelative {
   display: block;
   font-size: 50px;
   float: left;
   margin-right: 10px;
-  line-height: 37px;
-  height: 37px;
+  /* line-height: 37px; */
+  height: 40px;
   width: 37px;
   text-align: center;
 }
 .weather-params > li span {
   position: relative;
-  top: 10px;
+  top: 0px;
   font-weight: 300;
 }relative
-.location,
+h5 {
+  position: absolute;
+  font-weight: 300;
+  font-size: 35px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  top: 15px;
+  left: 2%;
+}
 .today {
   position: absolute;
   font-weight: 300;
@@ -832,7 +843,13 @@ body {
 
 
 
+.iconsdetail {
+  position: relative;
+  width: 5px;
+  color: white;
+  z-index: 9999
 
+}
 
 
 

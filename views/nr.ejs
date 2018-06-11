@@ -39,12 +39,13 @@
                            </li>
                            <li>
                            	<!-- MAIN ANIMATED SVG WEATHER ICON -->
+
                               <!-- /MAIN ANIMATED SVG WEATHER ICON -->
                            </li>
                            <li>
                               <ul class="weather-params">
-                                 <li><i class="climacon thermometer medium-high"></i> <span><%= data.main.pressure %> hPa</span></li>
-                                 <li><i class="climacon moon full"></i> <span><%= data.main.humidity %>% humidity</span></li>
+                                 <li><img class="iconsdetail" src="/baro.svg" alt="Smiley face"><span><%= data.main.pressure %> hPa</span></li>
+                                 <li><i class="fas fa-tint"></i> <span><%= data.main.humidity %>% humidity</span></li>
                                  <li><i class="climacon wind"></i> <span><%= data.wind.speed %>m/s NW</span></li>
 
                               </ul>

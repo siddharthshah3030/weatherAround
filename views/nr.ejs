@@ -29,7 +29,7 @@
                      <img src="/paris-sm.jpg" alt="">
                      <div class="img-area-front">
                         <h5 class="location"><%= data.name %> </h5>
-                        <p class="today"><%var d = new Date();%><%=d%></p>
+                        <p class="today"><%var d = new Date();%><%=d.toString().substring(0,25)%></p>
                         <div class="weather-desc">
                            <span><%= data.weather[0].description%></span>
                         </div>
@@ -60,8 +60,8 @@
                      <li class="sun">
                         <div class="inner">
                            <h5 class="week-day">Next six hours</h5>
-                           <i class="climacon sun"></i>
-                           <p class="" ><%= fdata.list[i].weather[0].description%> </p>
+                        <img class="weekicon" src="aicons/rainy-3.svg" alt="Smiley face">
+                           <p class="weekdaydesc" ><%= fdata.list[i].weather[0].description%> </p>
                            <p class="week-day-temperature"><%=Math.floor(fdata.list[i].main.temp -273.15)%></p>
                         </div>
                      </li>

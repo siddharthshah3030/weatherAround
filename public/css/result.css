@@ -667,7 +667,7 @@ sform-origin: 12% 5%;
 }
 .week-day {
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 0;
   font-weight: 300;
   font-size: 15px;
   text-transform: lowercase;
@@ -841,7 +841,9 @@ h5 {
   font-weight: 300;
 }
 
-
+.weekdaydesc {
+  margin-top: 0;
+}
 
 .iconsdetail {
   position: relative;
@@ -851,7 +853,15 @@ h5 {
 
 }
 
+.location{
+  position: absolute;
+  font-size: 3em;
+  font-weight: bolder;
+  color: rgba(250, 250, 250, 0.5);
+  margin-left: 5%;
+  margin-top: 2%;
 
+}
 
 
 

@@ -44,9 +44,9 @@
                            </li>
                            <li>
                               <ul class="weather-params">
-                                 <li><img class="iconsdetail" src="/baro.svg" alt="Smiley face"><span><%= data.main.pressure %> hPa</span></li>
+                                 <li><i class="fas fa-tint"></i> <span><%= data.main.pressure %> hPa</span></li>
                                  <li><i class="fas fa-tint"></i> <span><%= data.main.humidity %>% humidity</span></li>
-                                 <li><i class="climacon wind"></i> <span><%= data.wind.speed %>m/s NW</span></li>
+                                 <li><i class="fas fa-tint"></i>  <span><%= data.wind.speed %>m/s NW</span></li>
 
                               </ul>
                            </li>
@@ -59,9 +59,12 @@
                   <%  for(var i=0;i<14;i=i+2){  %>
                      <li class="sun">
                         <div class="inner">
-                           <h5 class="week-day">Next six hours</h5>
+                           <h5 class="week-day">+<%= i*6 %> hours</h5>
                         <img class="weekicon" src="aicons/rainy-3.svg" alt="Smiley face">
                            <p class="weekdaydesc" ><%= fdata.list[i].weather[0].description%> </p>
+                           <!-- <p class="weekdaydesc" ><%= fdata.list[i+1].weather[0].description%> </p> -->
+
+
                            <p class="week-day-temperature"><%=Math.floor(fdata.list[i].main.temp -273.15)%></p>
                         </div>
                      </li>

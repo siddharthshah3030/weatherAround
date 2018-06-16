@@ -57,7 +57,9 @@ app.get("/results", function(req, res){
 // });
 //
 // app.listen(8000);
-app.listen(3000, () => {
+var port = process.env.PORT || 8080;
+
+app.listen(port, () => {
   console.log("SiD server started");
 });
 

@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-image: url("https://images.unsplash.com/photo-1468571452166-b089f160f1c4");
+  background-image: url("land.jpg");
   background-size: cover;
   background-color: #000;
   font-family: "Nunito Sans";
@@ -61,13 +61,16 @@ zoom:1;
 /*-------------------------------------*/
 
 .form-wrapper-2 {
+  /* opacity: 0.5; */
   margin: auto;
   z-index: 9999;
   position: absolute;
-  top: 45%;
-width: 330px;
+  top: 20%;
+  margin-left: 25%;
+  margin-right: 45%;
+width: 30%;
 padding: 5px;
-background: #555;
+background: rgba(85,85,85, 0.5);
 -moz-border-radius: 10px;
 -webkit-border-radius: 20px;
 border-radius: 30px;
@@ -76,10 +79,11 @@ border-radius: 30px;
 box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
 }
 .form-wrapper-2 input {
-width: 210px;
+width: 70%;
+opacity: 0.8;
 color: black;
 height: 100%;
-padding: 10px 5px;
+padding: 10px 0px;
 float: left;
 font: bold 15px 'Raleway', sans-serif;
 border: 0;
@@ -111,6 +115,7 @@ font-weight: normal;
 font-style: italic;
 }
 .form-wrapper-2 button {
+  opacity: 0.8;
 overflow: visible;
 position: relative;
 float: right;
@@ -118,7 +123,7 @@ border: 0;
 padding: 0;
 cursor: pointer;
 height: 40px;
-width: 110px;
+width: 30%;
 font: bold 15px/40px 'Raleway', sans-serif;
 color: #fff;
 text-transform: uppercase;
@@ -158,4 +163,50 @@ padding: 0;
 
 .hidden {
   visibility: hidden;
+}
+#search {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-basis: auto;
+}
+.sidcity input {
+display: none;
+}
+.sidcity {
+  /* display: flex;
+  flex-direction: row; */
+}
+.sidcity button {
+
+  padding: 0 1.5em;
+  margin: 0;
+  color: white;
+  opacity: 0.6;
+  padding: 0.1em 1em;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition-timing-function: ease-in;
+  transition-duration: 0.1s;
+  font-size: 1.3em;
+  font-weight: ;
+  font-style: italic;
+
+}
+.sidcity button:hover {
+transform: scale(1.3);
+ }
+ a {
+   font-size: 1.2em;
+font-style: none;
+font-style: none;
+color: white;
+position: absolute;
+right: 5%;
+bottom: 2%;
+transition-duration: 0.2s;
+ }
+
+a:hover {
+  transform: scale(1.3);
 }

@@ -8,31 +8,51 @@
 </head>
 <body>
   <nav>
-    <ul id="primary">
+    <!-- <ul id="primary">
       <li><i class="fa fa-th-large fa-lg"></i></li>
       <li id="logo">
         <i class="fa fa-search" ></i>
       </li>
-    </ul>
+    </ul> -->
     <ul id="search">
-      <li>Web</li>
+      <form class="sidcity" action="/results" method="get">
+        <input type="text" name="city" value="raipur" >
+        <button type="submit">Raipur</button>
+      </form>
+       <form class="sidcity" action="/results" method="get">
+              <input type="text" name="city" value="Bhopal" >
+              <button type="submit">Bhopal</button>
+            </form>
+              <form class="sidcity" action="/results" method="get">
+                    <input type="text" name="city" value="Mumbai" >
+                    <button type="submit">Mumbai</button>
+                  </form>
+                  <form class="sidcity" action="/results" method="get">
+                        <input type="text" name="city" value="london" >
+                        <button type="submit">London</button>
+                      </form>    <form class="sidcity" action="/results" method="get">
+                                <input type="text" name="city" value="goa" >
+                                <button type="submit">Goa</button>
+                              </form>
+      <!-- <li>Web</li>
       <li>Images</li>
       <li>Videos</li>
-      <li>News</li>
+      <li>News</li> -->
     </ul>
     <div class="avatar">
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/298470/profile/profile-80_2.jpg" alt="" />
+      <!-- <img src="https://cdn.pixabay.com/photo/2016/11/06/05/36/landscape-1802337_960_720.jpg" alt="" /> -->
     </div>
   </nav>
 
   <div class="button_box2">
     <form class="form-wrapper-2 cf" action="/results" method="get">
-      <input type="text" name="city" placeholder="city name here" required>
+      <input type="text" name="city" placeholder="    type any city name here" required>
       <button type="submit">Search</button>
     </form>
   </div>
 
-
+  <a href="https://github.com/siddharthshah3030">- Siddharth Shah</a>
 
 </body>
 <script >

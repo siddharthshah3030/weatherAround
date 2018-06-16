@@ -36,6 +36,7 @@ app.get("/results", function(req, res){
         var fob = JSON.parse(body);
         console.log(typeof(ob));
         var weather = JSON.stringify(fob);
+        console.table(fob);
         res.render("nr", {data: ob, fdata: fob});
         console.log(weather);
       })

@@ -45,24 +45,9 @@ app.get("/results", function(req, res){
     });
 });
 
-
-// var http=require('http');
-//
-// var server=http.createServer(function(req,res){
-//     res.end('test');
-// });
-//
-// server.on('listening',function(){
-//     console.log('ok, server is running');
-// });
-//
-// app.listen(8000);
 var port = process.env.PORT || 8080;
 
 app.listen(port, () => {
   console.log("SiD server started");
 });
 
-// app.listen(process.env.PORT, process.env.IP, function(){
-//     console.log("weather webapp has started!!!");
-// });

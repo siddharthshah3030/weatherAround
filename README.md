@@ -13,3 +13,6 @@ it uses Express for API calling
 ### Built With
 * [openweathermap](https://openweathermap.org/current)
 * some better frontends
+
+
+note - currently has a fixed city dataset on repo to choose from 

@@ -15,12 +15,11 @@ body {
    width: 100%;
        -webkit-align-content: center;
     align-content: center;
-}
-body {
     background-image: url("weatherbg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
 .heading {
     color: white;
     text-align: center;
@@ -28,17 +27,19 @@ body {
     font-size: 20;
     font-weight: bolder;    
 }
+
 .results {
     color: white;
     
 }
 .subheading{
-      color: white;
+    color: white;
     text-align: center;
     margin: auto;
     font-size: 16;
     font-weight: bold;   
 }
+
 .formland{
     width: 50%;
     margin-top: 20%;
@@ -98,13 +99,14 @@ body {
 .dropdown-content li:hover {background-color: #f1f1f1}
 
 .show {display:block;} 
-</style><title>Page Title</title>
+</style><title>Weather ariund</title>
 </head>
 <body>
 <div class="formland">
 <h1 class="heading"> weather #betaversion</h1>
     
-<p class="subheading">current weather</p>
+<p class="subheading">Current weather</p>
+
 <p class="results"> <%=data %> </p>
 
 </div>
@@ -116,10 +118,6 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-function check(){
-    console.log(this);
-    console.log();
-}
 function filterFunction() {
   var input, filter, div, ul, li, a, i;
   input = document.getElementById("myInput");
@@ -142,7 +140,6 @@ function filterFunction() {
     alert(a);
     alert(event);
     }
-
 
 </script>
 

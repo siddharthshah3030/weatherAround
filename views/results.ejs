@@ -22,7 +22,7 @@ body {
     background-size: 100% 100%;
 }
 .heading {
-    color: white;
+    color: sky-blue;
     text-align: center;
     margin: auto;
     font-size: 20;
@@ -33,7 +33,7 @@ body {
     
 }
 .subheading{
-      color: white;
+    color: white;
     text-align: center;
     margin: auto;
     font-size: 16;
@@ -103,10 +103,8 @@ body {
 <body>
 <div class="formland">
 <h1 class="heading"> weather #betaversion</h1>
-    
 <p class="subheading">current weather</p>
 <p class="results"> <%=data %> </p>
-
 </div>
 
 </body>
@@ -116,10 +114,6 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-function check(){
-    console.log(this);
-    console.log();
-}
 function filterFunction() {
   var input, filter, div, ul, li, a, i;
   input = document.getElementById("myInput");

@@ -53,66 +53,8 @@
                         </ul>
                      </div>
                   </div>
-                  <!-- /MAIN AREA -->
-                  <!-- WEATHER FORECAST -->
-                  <ul class="week-forecast">
-                  <%  for(var i=0;i<14;i=i+2){  %>
-                     <li class="cloud rain">
-                        <div class="inner">
-                           <h5 class="week-day">+<%= i*6 %> hours</h5>
-                        <img class="weekicon" src="aicons/rainy-3.svg" alt="Smiley face">
-                           <p class="weekdaydesc" ><%= fdata.list[i].weather[0].description%> </p>
-                           <!-- <p class="weekdaydesc" ><%= fdata.list[i+1].weather[0].description%> </p> -->
-
-
-                           <p class="week-day-temperature"><%=Math.floor(fdata.list[i].main.temp -273.15)%></p>
-                        </div>
-                     </li>
-                  <% }  %>
-                     <!-- <li class="rain">
-                        <div class="inner">
-                           <h5 class="week-day">Tuesday</h5>
-                           <i class="climacon rain"></i>
-                           <p class="week-day-temperature">25</p>
-                        </div>
-                     </li>
-                     <li class="cloud">
-                        <div class="inner">
-                           <h5 class="week-day">Wednsday</h5>
-                           <i class="climacon cloud"></i>
-                           <p class="week-day-temperature">32</p>
-                        </div>
-                     </li>
-                     <li class="sun">
-                        <div class="inner">
-                           <h5 class="week-day">Thursday</h5>
-                           <i class="climacon sun"></i>
-                           <p class="week-day-temperature">30</p>
-                        </div>
-                     </li>
-                     <li class="rain sun">
-                        <div class="inner">
-                           <h5 class="week-day">Friday</h5>
-                           <i class="climacon rain sun"></i>
-                           <p class="week-day-temperature">29</p>
-                        </div>
-                     </li>
-                     <li class="sun">
-                        <div class="inner">
-                           <h5 class="week-day">Saturday</h5>
-                           <i class="climacon sun"></i>
-                          <p class="week-day-temperature">25</p>
-                        </div>
-                     </li>
-                     <li class="cloud sun">
-                        <div class="inner">
-                           <h5 class="week-day">Sunday</h5>
-                           <i class="climacon cloud sun"></i>
-                           <p class="week-day-temperature">22</p>
-                        </div>
-                     </li> -->
-                  </ul>
-                  <!-- /WEATHER FORECAST -->
+          
+            
                </div>
             </div>
          </div>
